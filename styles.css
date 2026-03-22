@@ -20,21 +20,20 @@ a{
 
 .container{
     height: 100vh;
-    mask-border-width: 100vh;
+    width: 100vh;
     display: grid;
     place-items: center;
 
 }
 
-.calculator {
+.calculator-dark {
     position: relative;
     height: auto;
     width: auto;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0, 0, 30px #000;
-
-}
+    box-shadow: 0 0 30px #000; 
+} 
 
 .theme-toggler{
     position: absolute;
@@ -43,13 +42,18 @@ a{
     cursor: pointer;
     z-index: 1;
     /* z-index ??? */
+
 }
 
 .theme-toggler.active{
-    color: #fff;
+    color: #333;
 }
 
-.theme-toggler.active::before{
+.theme-toggler.active ::before{
+    background-color: #fff;
+}
+
+.theme-toggler.active ::before{
     content: "";
     height: 30px;
     width: 30px;
@@ -62,7 +66,7 @@ a{
     z-index: -1;
 }
 
-.display {
+#display {
     margin: 0, 10px; 
     height: 150px;
     width: auto;
@@ -72,4 +76,13 @@ a{
     font-size: 30px;
     margin-bottom: 20px;
     overflow-x: scroll;
+}  
+
+#display ::-webkit-scrollbar {
+    display: block;
+    height: 3px;
+}
+
+button{
+    height: 60px;
 }
