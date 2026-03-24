@@ -53,6 +53,11 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    transition: all 200ms ease;
+}
+
+button:hover{
+    transform: scale(1.15);
 }
 
 .buttons button{
