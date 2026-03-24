@@ -8,50 +8,40 @@
     <title>Calculator</title>
 </head>
 <body>
-    <div class="container">
-        <div class="calculator-dark">
-            <div class="theme-toggler active">
-                <i class="toggler-icon"></i>
+    <div class="Calculator">
+        <div class="display">
+            <input type="text" class="display-input" placeholder="0">
+            <input type="text" class="display-result" >
+        </div>
 
-            </div>
-            <div class="display-screen">
-                <div id="display"></div>
-            </div>
-            <div class="buttons">
-                <table>
-                    <tr>
-                        <td><button class="btn-operaetor" id="clear">C</button></td>
-                        <td><button class="btn-operaetor" id="/">&divide;</button></td>
-                        <td><button class="btn-operaetor" id="*">&times;</button></td>
-                        <td><button class="btn-operaetor" id="backspace"><</button></td>
-                    </tr>
-                    <tr>
-                        <td><button class="btn-number" id="7">7</button></td>
-                        <td><button class="btn-number" id="8">8</button></td>
-                        <td><button class="btn-number" id="9">9</button></td>
-                        <td><button class="btn-operaetor" id="-">-</button></td>
-                    </tr>
-                    <tr>
-                         <td><button class="btn-number" id="4">4</button></td>
-                         <td><button class="btn-number" id="5">5</button></td>
-                         <td><button class="btn-number" id="6">6</button></td>
-                         <td><button class="btn-operaetor" id="+">+</button></td>
-                    </tr>
-                    <tr>
-                        <td><button class="btn-number" id="1">1</button></td>
-                        <td><button class="btn-number" id="2">2</button></td>
-                        <td><button class="btn-number" id="3">3</button></td>
-                        <td><button class="btn-operaetor" id="equal">=</button></td>
-                    </tr>
-                    <tr>
-                        <td><button class="btn-operaetor" id="(">(</button></td>
-                        <td><button class="btn-number" id="0">0</button></td>
-                        <td><button class="btn-operaetor" id=")">)</button></td>
-                    </tr>
-                </table>
-            </div>
+        <div class="buttons">
+            <button class="operator">AC</button>
+            <button class="operator">( )</button>
+            <button class="operator">%</button>
+            <button class="operator"><span>&divide;</span></button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="operator"><span>&times;</span></button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="operator"><span>-</span></button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="operator"><span>+</span></button>
+            <button>0</button>
+            <button>.</button>
+            <button class="operator backspace"><span></span></button>
+            <button class="operator"><span>=</span></button>
+
+            
         </div>
     </div>
+
+
+
     <script src="script.js"></script>
 </body>
 </html>
